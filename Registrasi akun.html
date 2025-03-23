@@ -3,64 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata Suci</title>
+    <title>Registrasi Akun</title>
 </head>
 <body>
+    <h1>Registrasi Akun</h1>
+    <form>
+        <fieldset>
+            <legend>Formulir Registrasi</legend>
 
-    <h1>Biodata</h1>
-
-    <h2>Identitas Diri</h2>
-    <img src="Foto uci.jpg" alt="Foto Profil" width="150">
-
-    <ul>
-        <li><strong>Nama:</strong> Suci Dwi Aprilia</li>
-        <li><strong>NIM:</strong> 202332027</li>
-        <li><strong>Prodi:</strong> S1 Sistem Informasi</li>
-        <li><strong>Alamat:</strong> Jalan Kh Abdul Hamid No.27, Jakarta Barat</li>
-        <li><strong>Email:</strong> Sucidwiprlia@gmail.com</li>
-    </ul>
-
-    <h2>Hobi</h2>
-    <img src="Membaca.jpg" alt="Hobi Membaca" width="150">
-    <img src="baking.jpg" alt="Hobi Baking" width="150">
-    <ul>
-        <li>Membaca</li>
-        <li>Baking</li>
-    </ul>
-
-    <h2>Riwayat Pendidikan</h2>
-    <table border="1" cellpadding="5" cellspacing="0">
-        <tr>
-            <th>No</th>
-            <th>Tingkat Pendidikan</th>
-            <th>Nama Sekolah</th>
-            <th>Tahun Lulus</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>SD</td>
-            <td>SDN 029 Pekanbaru</td>
-            <td>2017</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>SMP/MTS</td>
-            <td>MTS An-Najjah Pekanbaru</td>
-            <td>2020</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>SMA/SMK</td>
-            <td>SMK Negeri 6 Pekanbaru</td>
-            <td>2023</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>S1</td>
-            <td>ITPLN</td>
-            <td>2027</td>
-        </tr>
-    </table>
-
+            <table>
+                <tr>
+                    <td><label for="name">Masukkan nama:</label></td>
+                    <td><input type="text" id="name" name="name" value="Suci Dwi Aprilia"></td>
+                </tr>
+                <tr>
+                    <td><label for="nim">Masukkan NIM:</label></td>
+                    <td><input type="text" id="nim" name="nim" value="202332027"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Masukkan email:</label></td>
+                    <td><input type="email" id="email" name="email" value="Sucidwiprlia@gmail"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin:</td>
+                    <td>
+                        <label>
+                            <input type="radio" id="laki-laki" name="gender" value="Laki-Laki"> Laki-Laki
+                        </label>
+                        <label>
+                            <input type="radio" id="perempuan" name="gender" value="Perempuan" checked> Perempuan
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="agama">Agama:</label></td>
+                    <td>
+                        <select id="agama" name="agama">
+                            <option value="Islam" selected>Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Buddha">Buddha</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Masukkan password:</label></td>
+                    <td><input type="password" id="password" name="password" value="ucicomel"></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm-password">Konfirmasi password:</label></td>
+                    <td><input type="password" id="confirm-password" name="confirm-password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Daftar</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
 </body>
 </html>
